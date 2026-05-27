@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Avellaneda</title>
+    
+    <meta name="description" content="Café de especialidad en el corazón de Coyoacán. Tostamos nuestros propios granos mexicanos. Descubre nuestro menú y visítanos.">
+    <meta name="author" content="Café Avellaneda">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.cafeavellaneda.com/">
+    <meta property="og:title" content="Café Avellaneda | Especialidad en Coyoacán">
+    <meta property="og:description" content="Café de especialidad en el corazón de Coyoacán. Tostamos nuestros propios granos mexicanos. Descubre nuestro menú y visítanos.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=80">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.cafeavellaneda.com/">
+    <meta name="twitter:title" content="Café Avellaneda | Especialidad en Coyoacán">
+    <meta name="twitter:description" content="Café de especialidad en el corazón de Coyoacán. Tostamos nuestros propios granos mexicanos. Descubre nuestro menú y visítanos.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=80">
+
+    <link rel="icon" type="image/svg+xml" href="icon.svg">
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body oncontextmenu="return false;">
+    
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+    <label for="menu-toggle" class="sidebar-overlay"></label>
+
+    <header id="main-header">
+        <a href="#inicio" class="logo">
+            <img src="icon.svg" alt="Logo" class="logo-icon">
+            <span>Café Avellaneda</span>
+        </a>
+        
+        <nav class="desktop-nav">
+            <a href="#inicio"><i class="fa-solid fa-house"></i> Inicio</a>
+            <a href="#nosotros"><i class="fa-solid fa-leaf"></i> Nosotros</a>
+            <a href="#menu"><i class="fa-solid fa-mug-hot"></i> Menú</a>
+            <a href="#contacto"><i class="fa-solid fa-envelope"></i> Contacto</a>
+        </nav>
+    </header>
+
+    <div class="mobile-toggle-wrapper">
+        <label for="menu-toggle" class="menu-icon"><i class="fa-solid fa-bars"></i></label>
+    </div>
+
+    <aside class="mobile-sidebar">
+        <nav class="mobile-nav">
+            <a href="#inicio" onclick="document.getElementById('menu-toggle').checked=false"><i class="fa-solid fa-house"></i> Inicio</a>
+            <a href="#nosotros" onclick="document.getElementById('menu-toggle').checked=false"><i class="fa-solid fa-leaf"></i> Nosotros</a>
+            <a href="#menu" onclick="document.getElementById('menu-toggle').checked=false"><i class="fa-solid fa-mug-hot"></i> Menú</a>
+            <a href="#contacto" onclick="document.getElementById('menu-toggle').checked=false"><i class="fa-solid fa-envelope"></i> Contacto</a>
+        </nav>
+    </aside>
+
+    <section id="inicio" class="hero">
+        <div class="hero-protector"></div>
+        <div class="hero-content">
+            <h1>Café Avellaneda</h1>
+            <p>Café de especialidad en el corazón de Coyoacán. Tostamos nuestros propios granos mexicanos.</p>
+            <a href="#menu" class="btn"><i class="fa-solid fa-book-open"></i> Ver Menú</a>
+        </div>
+    </section>
+
+    <section id="nosotros" class="content-section">
+        <h2><i class="fa-solid fa-seedling"></i> Nuestra Historia</h2>
+        <p>Ubicados en Coyoacán, somos una barra de café de especialidad enfocada en resaltar los sabores de los granos mexicanos. Trabajamos con productores de Oaxaca, Veracruz y Chiapas.</p>
+        <p>Nuestro nombre es un homenaje a la novela "La tregua" de Mario Benedetti. Buscamos que cada taza sea una pequeña pausa en la ciudad.</p>
+    </section>
+
+    <section id="menu" class="content-section">
+        <h2><i class="fa-solid fa-mug-hot"></i> Menú de Barra</h2>
+        <table class="menu-table">
+            <thead>
+                <tr>
+                    <th>Bebida / Alimento</th>
+                    <th>Descripción</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Espresso</strong></td>
+                    <td>Extracción corta de la casa, blend Oaxaca/Veracruz.</td>
+                    <td>$45.00</td>
+                </tr>
+                <tr>
+                    <td><strong>Flat White</strong></td>
+                    <td>Doble ristretto con leche texturizada fina.</td>
+                    <td>$65.00</td>
+                </tr>
+                <tr>
+                    <td><strong>Juanito</strong></td>
+                    <td>Bebida insignia: Espresso, agua tónica, tamarindo y sal de gusano.</td>
+                    <td>$85.00</td>
+                </tr>
+                <tr>
+                    <td><strong>V60 / Kalita</strong></td>
+                    <td>Extracción manual filtrada (preguntar por granos invitados).</td>
+                    <td>$75.00</td>
+                </tr>
+                <tr>
+                    <td><strong>Cold Brew</strong></td>
+                    <td>Maceración en frío por 18 horas.</td>
+                    <td>$70.00</td>
+                </tr>
+                <tr>
+                    <td><strong>Galleta de Macadamia</strong></td>
+                    <td>Galleta artesanal con trozos de chocolate blanco.</td>
+                    <td>$40.00</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="contacto" class="content-section">
+        <h2><i class="fa-solid fa-location-dot"></i> Visítanos</h2>
+        <div class="contact-grid">
+            <div class="contact-details">
+                <h3>Ubicación</h3>
+                <p>Higuera 40-A, La Concepción, Coyoacán, 04000 Ciudad de México, CDMX</p>
+                <br>
+                <h3>Horarios</h3>
+                <p>Lunes a Domingo: 8:00 AM - 9:00 PM</p>
+                <p id="store-status" class="status-indicator"></p>
+                <br>
+                <h3>Teléfono</h3>
+                <p>55 6553 3441</p>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.481275126903!2d-99.1607341!3d19.3483028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffdb3f0d3b6b%3A0x3cc476af6f349072!2sCaf%C3%A9%20Avellaneda!5e0!3m2!1ses-419!2smx!4v1779845428502!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3><img src="icon.svg" alt="Logo" class="footer-logo"> Café Avellaneda</h3>
+                <p>Especialidad en Coyoacán. Tostamos y preparamos con orgullo granos 100% mexicanos.</p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Navegación</h3>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#nosotros">Historia</a></li>
+                    <li><a href="#menu">Menú</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Contacto</h3>
+                <ul class="contact-info">
+                    <li><i class="fa-solid fa-location-dot"></i> Higuera 40-A, Coyoacán, CDMX</li>
+                    <li><i class="fa-solid fa-phone"></i> 55 6553 3441</li>
+                    <li><i class="fa-solid fa-envelope"></i> hola@cafeavellaneda.com</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Síguenos</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2026 Café Avellaneda. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Script para el Scroll del Header
+        const hero = document.querySelector('.hero');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > hero.offsetHeight - 80) {
+                document.body.classList.add('is-scrolled');
+            } else {
+                document.body.classList.remove('is-scrolled');
+            }
+        });
+
+        // Script para evaluar en tiempo real la hora de la CDMX y cambiar el estado
+        function checkStoreStatus() {
+            const statusElement = document.getElementById('store-status');
+            
+            // Obtener la hora actual exacta en la zona horaria de la Ciudad de México
+            const options = { timeZone: 'America/Mexico_City', hour: 'numeric', hour12: false };
+            const formatter = new Intl.DateTimeFormat([], options);
+            const now = new Date();
+            const cdmxHour = parseInt(formatter.format(now), 10);
+
+            // Horario: 8:00 AM (8) a 9:00 PM (21). Ojo: a las 21:00 ya está cerrado.
+            if (cdmxHour >= 8 && cdmxHour < 21) {
+                statusElement.innerHTML = '<i class="fa-solid fa-circle-check"></i> <strong>Abierto ahora</strong>';
+                statusElement.className = 'status-indicator status-open';
+            } else {
+                statusElement.innerHTML = '<i class="fa-solid fa-circle-xmark"></i> <strong>Cerrado en este momento</strong>';
+                statusElement.className = 'status-indicator status-closed';
+            }
+        }
+
+        // Ejecutar al cargar la página y actualizar cada minuto por si cruza la hora
+        checkStoreStatus();
+        setInterval(checkStoreStatus, 60000);
+    </script>
+</body>
+</html>
